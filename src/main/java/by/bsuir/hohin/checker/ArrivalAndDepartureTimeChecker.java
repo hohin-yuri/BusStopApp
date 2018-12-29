@@ -5,7 +5,9 @@ import by.bsuir.hohin.entity.ServiceName;
 
 import java.util.List;
 
-public class AddBusCheckerImpl implements AddBusChecker {
+public class ArrivalAndDepartureTimeChecker extends CheckersChain<Bus> implements Checker<Bus> {
+
+    @Override
     public Boolean canProvide(List<Bus> buses, Bus bus) {
         for (Bus b : buses) {
             if (bus.getServiceName().equals(ServiceName.GROTTY)
@@ -23,6 +25,6 @@ public class AddBusCheckerImpl implements AddBusChecker {
                 return false;
             }
         }
-        return true;
+        return checkNext(buses, bus);
     }
 }
