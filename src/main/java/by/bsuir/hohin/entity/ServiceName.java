@@ -10,6 +10,15 @@ public enum ServiceName {
         this.name = name;
     }
 
+    public static ServiceName fromString(String text) {
+        for (ServiceName serviceName : ServiceName.values()) {
+            if (serviceName.name.equalsIgnoreCase(text)) {
+                return serviceName;
+            }
+        }
+        return null;
+    }
+
     public boolean equalsName(String otherName) {
         return name.equals(otherName);
     }
