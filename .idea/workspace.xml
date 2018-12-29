@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18498bcf-bccc-4bce-8e15-d4c6ac95abe3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/ServiceName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusCheckerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/Checker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/TravelTimeCheckerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusStopApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BusStopApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,13 +37,103 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bus.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bus.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/Bus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Checker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/Checker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddBusChecker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddBusCheckerImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusCheckerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#258#1009#0" expanded="true" />
+                <element signature="e#236#241#0" expanded="true" />
+                <element signature="e#258#1009#0" expanded="true" />
+                <element signature="e#292#605#0" expanded="true" />
+                <element signature="e#299#319#0" expanded="true" />
+                <element signature="e#296#343#0" expanded="true" />
+                <element signature="e#296#343#0" expanded="true" />
+                <element signature="e#366#384#0" expanded="true" />
+                <element signature="e#367#412#0" expanded="true" />
+                <element signature="e#367#412#0" expanded="true" />
+                <element signature="e#431#451#0" expanded="true" />
+                <element signature="e#436#487#0" expanded="true" />
+                <element signature="e#459#481#0" expanded="true" />
+                <element signature="e#436#487#0" expanded="true" />
+                <element signature="e#502#520#0" expanded="true" />
+                <element signature="e#511#558#0" expanded="true" />
+                <element signature="e#528#548#0" expanded="true" />
+                <element signature="e#511#558#0" expanded="true" />
+                <element signature="e#292#605#0" expanded="true" />
+                <element signature="e#618#798#0" expanded="true" />
+                <element signature="e#269#289#0" expanded="true" />
+                <element signature="e#622#673#0" expanded="true" />
+                <element signature="e#297#319#0" expanded="true" />
+                <element signature="e#622#673#0" expanded="true" />
+                <element signature="e#344#362#0" expanded="true" />
+                <element signature="e#344#398#0" expanded="true" />
+                <element signature="e#373#393#0" expanded="true" />
+                <element signature="e#344#398#0" expanded="true" />
+                <element signature="e#618#798#0" expanded="true" />
+                <element signature="e#811#999#0" expanded="true" />
+                <element signature="e#462#482#0" expanded="true" />
+                <element signature="e#462#520#0" expanded="true" />
+                <element signature="e#493#515#0" expanded="true" />
+                <element signature="e#462#520#0" expanded="true" />
+                <element signature="e#544#562#0" expanded="true" />
+                <element signature="e#544#599#0" expanded="true" />
+                <element signature="e#573#593#0" expanded="true" />
+                <element signature="e#544#599#0" expanded="true" />
+                <element signature="e#811#999#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelTimeCheckerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/TravelTimeCheckerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#237#299#1" expanded="true" />
+                <element signature="e#258#280#0" expanded="true" />
+                <element signature="e#258#298#0" expanded="true" />
+                <element signature="e#308#366#1" expanded="true" />
+                <element signature="e#327#347#0" expanded="true" />
+                <element signature="e#327#365#0" expanded="true" />
+                <element signature="e#375#417#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +162,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -105,6 +192,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/ServiceName.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/Bus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/Checker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusCheckerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/TravelTimeCheckerImpl.java" />
       </list>
     </option>
   </component>
@@ -167,6 +258,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hohin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BusStopApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BusStopApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hohin" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BusStopApp" type="b2602c69:ProjectViewProjectNode" />
@@ -283,16 +383,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546003819721</updated>
-      <workItem from="1546003825257" duration="472000" />
+      <workItem from="1546003825257" duration="2242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472000" />
+    <option name="totallyTimeSpent" value="2242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="1440" height="825" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -364,10 +463,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/entity/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/Checker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/TravelTimeCheckerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#299#1" expanded="true" />
+            <element signature="e#258#280#0" expanded="true" />
+            <element signature="e#258#298#0" expanded="true" />
+            <element signature="e#308#366#1" expanded="true" />
+            <element signature="e#327#347#0" expanded="true" />
+            <element signature="e#327#365#0" expanded="true" />
+            <element signature="e#375#417#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsuir/hohin/checker/AddBusCheckerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#1009#0" expanded="true" />
+            <element signature="e#236#241#0" expanded="true" />
+            <element signature="e#258#1009#0" expanded="true" />
+            <element signature="e#292#605#0" expanded="true" />
+            <element signature="e#299#319#0" expanded="true" />
+            <element signature="e#296#343#0" expanded="true" />
+            <element signature="e#296#343#0" expanded="true" />
+            <element signature="e#366#384#0" expanded="true" />
+            <element signature="e#367#412#0" expanded="true" />
+            <element signature="e#367#412#0" expanded="true" />
+            <element signature="e#431#451#0" expanded="true" />
+            <element signature="e#436#487#0" expanded="true" />
+            <element signature="e#459#481#0" expanded="true" />
+            <element signature="e#436#487#0" expanded="true" />
+            <element signature="e#502#520#0" expanded="true" />
+            <element signature="e#511#558#0" expanded="true" />
+            <element signature="e#528#548#0" expanded="true" />
+            <element signature="e#511#558#0" expanded="true" />
+            <element signature="e#292#605#0" expanded="true" />
+            <element signature="e#618#798#0" expanded="true" />
+            <element signature="e#269#289#0" expanded="true" />
+            <element signature="e#622#673#0" expanded="true" />
+            <element signature="e#297#319#0" expanded="true" />
+            <element signature="e#622#673#0" expanded="true" />
+            <element signature="e#344#362#0" expanded="true" />
+            <element signature="e#344#398#0" expanded="true" />
+            <element signature="e#373#393#0" expanded="true" />
+            <element signature="e#344#398#0" expanded="true" />
+            <element signature="e#618#798#0" expanded="true" />
+            <element signature="e#811#999#0" expanded="true" />
+            <element signature="e#462#482#0" expanded="true" />
+            <element signature="e#462#520#0" expanded="true" />
+            <element signature="e#493#515#0" expanded="true" />
+            <element signature="e#462#520#0" expanded="true" />
+            <element signature="e#544#562#0" expanded="true" />
+            <element signature="e#544#599#0" expanded="true" />
+            <element signature="e#573#593#0" expanded="true" />
+            <element signature="e#544#599#0" expanded="true" />
+            <element signature="e#811#999#0" expanded="true" />
           </folding>
         </state>
       </provider>
