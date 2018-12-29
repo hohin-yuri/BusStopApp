@@ -5,7 +5,10 @@ import by.bsuir.hohin.entity.Bus;
 import by.bsuir.hohin.entity.ServiceName;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class BusRepositoryImpl implements BusRepository{
 
@@ -23,12 +26,18 @@ public class BusRepositoryImpl implements BusRepository{
     }
 
     private List<Bus> getCheckedBuses() {
-        return null;
+        List<Bus> checkedBuses = new ArrayList<>();
+        return buses.parallelStream()
+                .filter(bus -> checker.canProvide(buses, bus))
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Bus> getBusesByServiceName(ServiceName serviceName) {
-        List<Bus> buses = new ArrayList<>();
-        return null;
+        return  getCheckedBuses()
+                .parallelStream()
+                .filter(bus -> bus.getServiceName().equals(serviceName))
+                .sorted(Comparator.naturalOrder())
+                .collect(Collectors.toList());
     }
 }

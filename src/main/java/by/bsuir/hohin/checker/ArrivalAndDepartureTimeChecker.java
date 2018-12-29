@@ -11,7 +11,7 @@ public class ArrivalAndDepartureTimeChecker extends CheckersChain<Bus> implement
     public Boolean canProvide(List<Bus> buses, Bus bus) {
         for (Bus b : buses) {
             if (bus.getServiceName().equals(ServiceName.GROTTY)
-                    && b.getServiceName().equals(ServiceName.GROTTY)
+                    && b.getServiceName().equals(ServiceName.POSH)
                     && b.getDepartureTime().equals(bus.getDepartureTime())
                     && b.getArrivalTime().equals(bus.getArrivalTime())) {
                 return false;
