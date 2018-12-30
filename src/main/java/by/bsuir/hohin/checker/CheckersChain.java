@@ -4,7 +4,7 @@ import by.bsuir.hohin.entity.Bus;
 
 import java.util.List;
 
-public abstract class CheckersChain<T> {
+public abstract class CheckersChain<T> implements Checker<T> {
 
     private Checker<T> next;
 
@@ -14,7 +14,10 @@ public abstract class CheckersChain<T> {
     }
 
     protected boolean checkNext(List<T> entitiesList, T entity) {
-        return false;
+        if (next == null) {
+            return true;
+        }
+        return next.canProvide(entitiesList, entity);
     }
 }
 

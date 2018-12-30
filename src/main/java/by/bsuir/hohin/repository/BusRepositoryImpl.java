@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BusRepositoryImpl implements BusRepository{
+public class BusRepositoryImpl implements BusRepository {
 
     private final Checker<Bus> checker;
     private final List<Bus> buses;
@@ -29,6 +29,7 @@ public class BusRepositoryImpl implements BusRepository{
         List<Bus> checkedBuses = new ArrayList<>();
         return buses.parallelStream()
                 .filter(bus -> checker.canProvide(buses, bus))
+                //.filter(bus -> { System.out.println(bus.toString()); System.out.println(checker.canProvide(buses, bus)); return checker.canProvide(buses, bus); })
                 .collect(Collectors.toList());
     }
 

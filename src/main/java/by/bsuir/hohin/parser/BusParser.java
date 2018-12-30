@@ -15,7 +15,6 @@ public class BusParser implements StringParser<Bus>{
     public Bus parse(String info) {
         Bus bus = new Bus();
         String[] busFields = info.split(" ");
-
         ServiceName serviceName = ServiceName.fromString(busFields[0]);
         bus.setServiceName(serviceName);
 
@@ -35,6 +34,7 @@ public class BusParser implements StringParser<Bus>{
 
         bus.setDepartureTime(departureTime);
         bus.setArrivalTime(arrivalTime);
+        System.out.println(bus.getArrivalTime());
 
         return bus;
     }
