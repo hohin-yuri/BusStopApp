@@ -24,7 +24,6 @@ public class Application {
     public static void main(String args[]) throws IOException {
 
         String inputPath = args[0];
-        System.out.print(Files.lines(Paths.get(inputPath)).toArray()[0]);
         StringParser<Bus> parser = new BusParser();
         List<Bus> buses = FileUtil.parseFromFile(parser, inputPath);
         BusService busService = null;

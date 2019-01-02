@@ -2,6 +2,7 @@ package by.bsuir.hohin.parser;
 
 import by.bsuir.hohin.entity.Bus;
 import by.bsuir.hohin.entity.ServiceName;
+import by.bsuir.hohin.util.ConfigurationUtil;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -9,7 +10,7 @@ import java.util.Calendar;
 
 public class BusParser implements StringParser<Bus>{
 
-    private static final String TIME_FORMAT = "HH:mm";
+    private static final String TIME_FORMAT = ConfigurationUtil.getProperty("date.format", "HH:mm");
 
     @Override
     public Bus parse(String info) {
@@ -29,12 +30,12 @@ public class BusParser implements StringParser<Bus>{
             arrivalTime.setTime(simpleDateFormat.parse(busFields[2]));
 
         } catch (ParseException e) {
+            System.err.println("Can't parse date! Invalid date format!");
             e.printStackTrace();
         }
 
         bus.setDepartureTime(departureTime);
         bus.setArrivalTime(arrivalTime);
-        System.out.println(bus.getArrivalTime());
 
         return bus;
     }
